@@ -1,48 +1,57 @@
-<html> 
+
+
+    <!-- Philip Ayoub 
+4/17/2015
+Programming final project -->
+
+ <!-- WHo I have worked with -->   
+ 
+ <html>
 	<head>
-		<style type="text/css">          
+		<title>PalmerHill Accounting/Clients </title>
+	<link href = "FinalProject2.css" rel = "stylesheet" type = "text/css"/>		
+	<style type="text/css">
+		
+		
+		#main { 
+		width: 446px;
+	padding: 10px;
+	float: right;
+	width: 50%;
+	text-align: justify;
 	
-			body { 	  
- 		  			font-size: 2.5em;
- 		  			font-family: serif;
-	      			background-color: blue; 
-	      			color: white;
-	      			padding: 5%;
-	      			text-align:center;
-	      		 			
-	    		 }
-	    		 
-	    aside { 
- 		float: right;
- 		margin-bottom: 40%
- 		}
- 		
- 		
- 		
-            aside a {
-		     	
-	        color: black;
-	        font-size: 1.9em;
-	        text-decoration: none;
-	        float: top;
-	        vertical-align: straight;
-	        margin-top: 10%;
-	        vertical-align: center;
-	       text-align: right;
-	       padding: 5%;
-	        font-size:  1.7em;
-	         text-align: justify;
-	
-				
+		
+		
 		}
+		
+		.mainlift { font-size: 1em;
+					margin-top: 10%;
+					float:left;		}					
+
+			
+			.verticalLine {
+    border-left: thick solid #003398;
+    border-right: thick solid #003398;
+    margin-right: 13%;
+    Padding-right: 5%;
+		padding-left: 5%;
+							}	
+		</style>      
+	</head>
 	
-			aside a:hover { background: white;
-			 				border-radius: 30px;
-				  
-				}
-	    
-		</style>  
-			 <!--Load the AJAX API-->
+	<body>
+				<img src = Unknown.jpeg />
+		
+		<aside>
+			
+			<a href = "PJAQ4aboutus.html">About Us.</a><br />
+			<a href = "PJAQ4Forum.html">Register.</a><br />
+			
+		   
+		</aside>
+		
+			
+		 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
@@ -80,37 +89,57 @@
           									},
           				
           					    
-          				'backgroundColor': 'blue',	
+          				'backgroundColor': '#88B8FF',	
           				'legend': {position: 'top', textStyle: {color: 'white', fontSize: 17}},     
           				'titleTextStyle': {color: '#FFFFFF',
 							fontSize: '30',          									},	
 
                        };
 
-        // Instantiate and draw our chart, passing in some options.
+        // Instantiate and draw our chart, passing in some options.   
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));    
         chart.draw(data, options);
       }
     </script>    
-	</head>    
-		<body>
+	 
+	<div id="chart_div"></div>     
 	
-     <div id="chart_div"></div>
-  
- 			 <aside>
+	<h3> 
+	Model UN
+Bridging the Education Gap and Creating Global Citizens
+
+Model United Nations is an authentic simulation of the UN General Assembly, UN Security Council, or other multilateral body, which introduces students to the world of diplomacy, negotiation, and decision making. 
+
+At Model UN, students step into the shoes of ambassadors of countries that are members of the UN, from Argentina to Zimbabwe. The students, better known as “delegates”, debate current issues on the organization’s vast agenda. They prepare draft resolutions, plot strategy, negotiate with supporters and adversaries, resolve conflicts, and navigate the UN’s rules of procedure – all in the interest of resolving problems that affect the world.
+
+Before playing out their ambassadorial roles in Model UN, students research the particular global problem to be addressed. The problems are drawn from today’s headlines. Model UN delegates learn how the international community acts on its concerns about peace and security, human rights, the environment, food and hunger, economic development, and globalization.
+
+<br />
+<br />
+
+Model UN delegates also look closely at the needs, aspirations, and foreign policy of the country they will “represent” at the event. The insights they gain from their exploration of history, geography, mathematics, culture, economics, and science contribute to the authenticity of the simulations once the actual role-playing gets underway, and ensures a lively and memorable experience.
+
+Model UN not only involves young people in the study and discussion of global issues, but also encourages the development of skills useful throughout their lives – skills including research techniques, writing, public speaking, problem-solving, conflict resolution, compromise, and cooperation.
+
+The popularity of participating in Model UN has contributed to the rapid growth of this activity over the past several decades. Many Model UN participants are repeaters, since the spirit of these simulations creates an appétit for this activity more commonly known as “M-U-N Fever”.
+
+In fact, quite a few of today’s leaders in law, government, business, and the arts participated in Model UN during their academic careers – from U.S. Supreme Court Justice Stephen Breyer, to Chelsea Clinton and actor Samuel L. Jackson (Pulp Fiction).
+
+As many states move to implement standards for global citizenship, Model UN is proving to be an innovative resource to prepare students for career and college success.  
+	</h3>
+			
 		
-				<a href = "PJAQ4aboutus.html">About Us.</a> 
-				<a href = "PJAQ3Google1.html">About Us.</a> 
-				<a href = "PJAQ3Google1.html">About Us.</a> 
-				<a href = "PJAQ3Google1.html">About Us.</a> 
+		
+		<footer>   
+				Model UN Highschool Club Page <br />
+			<br>
+			Website owner and maker: Philip Ayoub and Alex Litt.
+			
+		</footer>
+	</body>
+</html>
 	
-			</aside>
-  
-  
-  
-  </body>
-  
-  </html>  
-    
+	
+	
     
     
