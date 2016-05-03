@@ -1,0 +1,104 @@
+<!-- Philip Ayoub 
+4/17/2015
+Programming final project -->
+
+ <!-- WHo I have worked with -->   
+ 
+ <html>
+	<head>
+		<title>PalmerHill Accounting/Clients </title>
+	<link href = "FinalProject2.css" rel = "stylesheet" type = "text/css"/>		
+	<style type="text/css">
+		
+		
+		#main { 
+		width: 446px;
+	padding: 10px;
+	float: right;
+	width: 50%;
+	text-align: justify;
+	
+		
+		
+		}
+		
+		.mainlift { font-size: 1em;
+					margin-top: 10%;
+					float:left;		}					
+
+			
+			.verticalLine {
+     border-right: thick solid #003398;
+    margin-right: 13%;
+    Padding-right: 5%;
+		padding-left: 5%;
+		border-color: white;
+							}	
+		</style>      
+	</head>
+	
+	<body>
+	
+			
+				<img src = Unknown.jpeg />
+		
+		<aside>
+		
+			<a href = "PJAQ4Index.html">Home</a><br />
+			<a href = "PJAQ4aboutus.html">About Us</a><br />
+			<a href = "PJAQ4Locations.html"> Locations</a><br />    
+			
+		   
+		</aside>
+		
+		<div class="verticalLine">	 
+		
+		
+		
+		
+		
+		
+		
+		
+							<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<form id="input-form" action="" method="POST" target="no-target">
+  <input id="input-q1" placeholder="q1" name="q1"> </input>
+  <button id="form-submit" type="submit">SUBMIT</button>
+</form>
+
+<p id="input-feedback"></p>
+
+<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+
+<script>
+    $('#input-form').one('submit',function(){
+        var inputq1 = encodeURIComponent($('#input-q1').val());
+        var q1ID = "entry_1752262989";      
+        var baseURL = 'https://docs.google.com/a/greenwichschools.org/forms/d/19SSBf5T_IukPrRpGzUpT2UGKaEHj2Z0RPynQ9M3ptqw/formResponse?';
+        //https://docs.google.com/spreadsheets/d/1HsT_v8B5PQNk_lnUe2Pfb-u-VMWCJ0pWo8uASk0p-u4/edit#gid=1127277410
+        var submitRef = '&submit=Submit';
+        var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        $('#input-feedback').text('Thank You!');
+    });
+</script>
+
+</div>
+			<footer>   
+				Model UN Highschool Club Page <br />
+			<br>
+			Website owner and maker: Philip Ayoub and Alex Litt.
+			
+		</footer> 
+	</body>          
+</html>   	
+
+		
+		
+		
+		
+		
+		
+		
