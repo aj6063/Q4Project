@@ -60,10 +60,10 @@ Programming final project -->
 		
 		
 		
-							<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+							<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>         
 
 <form id="input-form" action="" method="POST" target="no-target">
-  <input id="input-q1" placeholder="q1" name="q1"> </input>
+  <input id="input-q1" placeholder="What Grade are you in?(Ie.Freshman)" name="q1"> </input>
   <button id="form-submit" type="submit">SUBMIT</button>
 </form>
 
@@ -82,7 +82,13 @@ Programming final project -->
         console.log(submitURL);
         $(this)[0].action=submitURL;
         $('#input-feedback').text('Thank You!');
+
+   		location.reload();		        
+
     });
+    
+    
+
 </script>
 
 </div>
