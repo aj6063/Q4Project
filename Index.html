@@ -74,16 +74,15 @@ Programming final project -->
 <script>
     $('#input-form').one('submit',function(){
         var inputq1 = encodeURIComponent($('#input-q1').val());
-        var q1ID = "entry_1752262989";      
-        var baseURL = 'https://docs.google.com/a/greenwichschools.org/forms/d/19SSBf5T_IukPrRpGzUpT2UGKaEHj2Z0RPynQ9M3ptqw/formResponse?';
-        //https://docs.google.com/spreadsheets/d/1HsT_v8B5PQNk_lnUe2Pfb-u-VMWCJ0pWo8uASk0p-u4/edit#gid=1127277410
+        var q1ID = "entry_2071262986";      
+        var baseURL = 'https://docs.google.com/a/greenwichschools.org/forms/d/1hIR2DmS3Ms9IowP1uSPa1tlp9zpRKZBOYEvKdOgryOU/formResponse?';
         var submitRef = '&submit=Submit';
         var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
         console.log(submitURL);
         $(this)[0].action=submitURL;
         $('#input-feedback').text('Thank You!');
 
-   		location.reload();		        
+   	            location.reload();		        
 
     });
     
